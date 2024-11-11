@@ -1,14 +1,16 @@
-# config-yml - Simple Yaml Config for Node.js
+This project was forked from [config-yml2](https://github.com/Nordstrom/config) with the updated dependencies and without errors
 
-[![Travis Build](https://travis-ci.org/Nordstrom/config.svg)](https://travis-ci.org/Nordstrom/config) [![Coverage Status](https://coveralls.io/repos/github/Nordstrom/config/badge.svg?branch=master)](https://coveralls.io/github/Nordstrom/config?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![config-yml](https://img.shields.io/npm/v/config-yml.svg)](https://www.npmjs.com/package/config-yml)
+# config-yml2 - Simple Yaml Config for Node.js
+
+[![Travis Build](https://travis-ci.org/Nordstrom/config.svg)](https://travis-ci.org/Nordstrom/config) [![Coverage Status](https://coveralls.io/repos/github/Nordstrom/config/badge.svg?branch=master)](https://coveralls.io/github/Nordstrom/config?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![config-yml2](https://img.shields.io/npm/v/config-yml2.svg)](https://www.npmjs.com/package/config-yml2)
 
 ## Install
 ```
-$ yarn add config-yml
+$ yarn add config-yml2
 ```
 or
 ```
-$ npm install config-yml --save
+$ npm install config-yml2 --save
 ```
 
 ## Usage
@@ -30,7 +32,7 @@ This config can be accessed like this.
 
 ```javascript
 
-const config = require('config-yml');
+const config = require('config-yml2');
 
 console.log(config.app.url);
 console.log(config.app.cache);
@@ -144,7 +146,7 @@ config/prod.yml
 Set the Environment ID using the load function.
 
 ```js
-const config = require('config-yml').load('myenvironment')
+const config = require('config-yml2').load('myenvironment')
 ```
 
 
@@ -207,7 +209,7 @@ db:
 This will yield the following:
 
 ```javascript
-const config = require('config-yml');
+const config = require('config-yml2');
 
 console.log(config.dns);          // feature-xyz.myapp.com
 console.log(config.app.url);      // http://feature-xyz.myapp.com
@@ -242,7 +244,7 @@ and the following app.js file:
 
 
 ```javascript
-const config = require('config-yml');
+const config = require('config-yml2');
 
 console.log(config.dns);
 console.log(config.app.url);
